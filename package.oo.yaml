@@ -1,4 +1,4 @@
-version: 0.1.0
+version: 0.1.1
 scripts:
   # Script executed when the container is first loaded
   # eg: bootstrap: pip install pandas
@@ -8,4 +8,5 @@ icon: ./icon.png
 name: number-to-words
 description: translate number to words.
 displayName: Number To Words
-releaseNotes: 'chore: update libs'
+releaseNotes: "fix: upload icon"
+repository: https://github.com/a1528zhang/oomol-number-to-words
