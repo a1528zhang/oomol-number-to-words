@@ -1,0 +1,42 @@
+executor:
+  name: nodejs
+  options:
+    entry: main.js
+inputs_def:
+  - handle: input
+    json_schema:
+      type: number
+  - handle: ignoreDecimal
+    json_schema:
+      type: boolean
+    value: false
+  - handle: currency
+    json_schema:
+      type: boolean
+    value: false
+  - handle: type
+    json_schema:
+      enum:
+        - default
+        - uppercase
+        - lowercase
+      ui:options:
+        labels:
+          - default
+          - uppercase
+          - lowercase
+    value: default
+  - handle: prefix
+    json_schema:
+      type: string
+    nullable: true
+  - handle: suffix
+    json_schema:
+      type: string
+    nullable: true
+outputs_def:
+  - handle: output
+    json_schema:
+      type: string
+title: Number To Wrods
+icon: ":fa6-solid:retweet:"

@@ -1,0 +1,17 @@
+nodes:
+  - task: self::number-to-words
+    title: "Number To Wrods"
+    node_id: number-to-words#1
+    inputs_from:
+      - handle: input
+        value: 12123.4
+      - handle: ignoreDecimal
+        value: false
+      - handle: suffix
+        value: .
+      - handle: prefix
+        value: "SAY US DOLLARS "
+      - handle: currency
+        value: true
+      - handle: type
+        value: uppercase
